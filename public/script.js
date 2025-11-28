@@ -203,6 +203,7 @@ const mq_data = {
   "Coastal Clash": 216300000,
   "Unda's Rescue Operation": 222200000,
   "Unda's Return": 228100000,
+  "The Young Man and the Old Tree": 234000000,
 };
 
 const splitMqInfo = function () {

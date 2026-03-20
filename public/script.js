@@ -205,6 +205,7 @@ const mq_data = {
   "Unda's Return": 228100000,
   "The Young Man and the Old Tree": 234000000,
   "The Village of Lixis": 240000000,
+  "Visions of a distant past": 246000000,
 };
 
 const splitMqInfo = function () {

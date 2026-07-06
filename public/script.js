@@ -1,6 +1,6 @@
 "use strict";
 
-const LV_CAP = 320;
+const LV_CAP = 325;
 
 const range = function (begin, end, step = 1) {
   let list = [];
@@ -17,16 +17,14 @@ const fillOptions = function (values, keys = null, selected = false) {
 
   let s = "";
   if (keys != null) {
-    s += `<option value="${values[0]}"${selected ? " selected" : ""}>${
-      keys[0]
-    }</option>\n`;
+    s += `<option value="${values[0]}"${selected ? " selected" : ""}>${keys[0]
+      }</option>\n`;
     for (var i = 1; i < values.length; i++) {
       s += `<option value="${values[i]}">${keys[i]}</option>\n`;
     }
   } else {
-    s += `<option value="${values[i]}"${selected ? " selected" : ""}>${
-      values[i]
-    }</option>\n`;
+    s += `<option value="${values[i]}"${selected ? " selected" : ""}>${values[i]
+      }</option>\n`;
     for (var i = 1; i < values.length; i++) {
       s += `<option value="${values[i]}">${values[i]}</option>\n`;
     }
@@ -207,6 +205,9 @@ const mq_data = {
   "The Village of Lixis": 240000000,
   "Visions of a distant past": 246000000,
   "As the Roots Come to Light": 252100000,
+  "Chapter 16": "",
+  "Freedos's Thoughts": 141700000,
+  "Chaos in the Valley": 293700000,
 };
 
 const splitMqInfo = function () {
@@ -328,9 +329,8 @@ const evaluateDiaries = function () {
     } else {
       $("#mq-table-results").html(`
                 <div style="padding: 1em;">
-                    <span style="text-align: justify;"><span style="font-weight: bold;">Error</span>: Too many runs required (${
-                      runs + 1
-                    }), select a wider range between quests.</span>
+                    <span style="text-align: justify;"><span style="font-weight: bold;">Error</span>: Too many runs required (${runs + 1
+        }), select a wider range between quests.</span>
                 </div>
             `);
       return;
@@ -370,8 +370,8 @@ const evaluateDiaries = function () {
                 <div class="mq-table-grid" id="mq-table-row">
                     <div>${runs + 1}</div>
                     <div>${$(
-                      `#mq-until option[value="${mqStopIndex}"]`,
-                    ).text()}</div>
+        `#mq-until option[value="${mqStopIndex}"]`,
+      ).text()}</div>
                     <div>${lv} (${lvP}%)</div>
                 </div>
             `);

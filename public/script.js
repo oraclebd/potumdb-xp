@@ -208,6 +208,7 @@ const mq_data = {
   "Chapter 16": "",
   "Freedos's Thoughts": 141700000,
   "Chaos in the Valley": 293700000,
+  "Challenge the Crimson Dragon!": 300900000,
 };
 
 const splitMqInfo = function () {
